@@ -7,8 +7,12 @@ const app = express();
 
 const DB = "mongodb://admin:your-secure-password@34.239.123.93:27017/admin";
 
-mongoose.connect(DB,{
-    // useUnifiedTopology: true,
+mongoose.connect(DB,{{
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  serverSelectionTimeoutMS: 30000, // Increase timeout
+  authSource: "admin"
+}
 }).then(con => {
     console.log('DB connection successfull');
 }).catch((err) => {
