@@ -9,7 +9,7 @@ const DB = "mongodb://admin:your-secure-password@34.239.123.93:27017/admin";
 
 mongoose.connect(DB,{
   useNewUrlParser: true,
-  useUnifiedTopology: true,
+  // useUnifiedTopology: true,
   serverSelectionTimeoutMS: 30000, // Increase timeout
   authSource: "admin"
 }).then(con => {
