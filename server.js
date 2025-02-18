@@ -5,7 +5,8 @@ const express = require('express');
 
 const app = express();
 
-const DB = "mongodb://admin:your-secure-password@34.239.123.93:27017/admin";
+const DB = "mongodb://admin:StrongPassword123@localhost:27017/mydatabase?authSource=admin";
+
 
 mongoose.connect(DB,{
   useNewUrlParser: true,
