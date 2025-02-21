@@ -5,7 +5,7 @@ const express = require('express');
 
 const app = express();
 
-const DB = "mongodb://admin:123@localhost:27017/admi?authSource=admin";
+const DB = "mongodb://admin:123@localhost:27017/ad?authSource=admin";
 
 
 mongoose.connect(DB,{
